@@ -1,3 +1,0 @@
-<p>/*<br> * main.c<br> *<br> *  Created on: Oct 26, 2015<br> *      Author: kevin<br> */<br><br>#include &lt;stdio.h&gt;<br>#include &lt;string.h&gt;<br>#include &lt;time.h&gt;</p>
-<p> </p>
-<p>int main()<br>{<br><br>       time_t ltime;<br>       time_t endtime;<br>       time_t loctime;<br>       struct tm * timeinfo;<br><br>       printf("The time is %s", ctime(&amp;ltime));<br><br>       time (&amp;ltime);<br>       timeinfo = localtime (&amp;ltime);<br>       printf ("Current local time and date: %s", asctime(timeinfo));<br><br><br>       ltime = time(NULL);<br>       sleep(1);<br>       endtime = time(NULL);<br>       printf("The difference in time is %d", (&amp;endtime-&amp;ltime));<br><br><br>    return 0;<br>}</p>

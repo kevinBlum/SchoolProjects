@@ -1,4 +1,0 @@
-#!/bin/bash
-#command to use scp to copy file from the source address to the destination address
-
-scp /home/kevinblum/exercise1/* kevinblum@192.168.150.129:/home/kevin/exercise1

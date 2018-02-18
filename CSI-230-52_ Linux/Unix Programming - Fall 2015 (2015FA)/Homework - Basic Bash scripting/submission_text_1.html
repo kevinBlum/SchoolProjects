@@ -1,1 +1,0 @@
-<p>#!/bin/bash<br>#<br>#Kevin Blum<br><br>submain()<br>{<br>    workingdir=`pwd`<br>    echo $workingdir<br><br>}<br><br>main()<br>{<br>    echo $@<br>    unamevar=`uname`<br>    if [ "$unamevar" == 'Linux' ]; then<br>           submain<br>    else<br>        echo $unamestr<br>    fi<br>    <br><br>}<br><br>main "$@"</p>
